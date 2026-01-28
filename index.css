@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: red;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: green;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+h2, h3 {
+    color: green;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.left { flex: 1; min-width: 250px; margin: 10px; }
+.right { flex: 0 0 200px; display: flex; justify-content: flex-end; margin: 10px; }
+
+.right img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.grand-texte { font-size: 28px; }
+
+.btn-red {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.competences-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.skills-box {
+    width: 400px;
+    border: 2px solid #2c3e50;
+    padding: 20px;
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+.bar {
+    height: 12px;
+    background: #ddd;
+    margin: 5px 0;
+}
+
+.bar-fill {
+    height: 100%;
+    background: green;
+}
+
+.projets-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.projet-card {
+    border: 2px solid #2c3e50;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-nom { border: 2px solid #3498db; padding: 10px; margin: 10px 0; }
+.input-email { border: 2px solid #e67e22; padding: 10px; margin: 10px 0; }
+.input-message { border: 2px solid #9b59b6; padding: 10px; margin: 10px 0; }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: block;
+    padding: 10px 15px;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
